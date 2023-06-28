@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f1f1f1;
+      background-image: url(https://t4.ftcdn.net/jpg/03/00/47/67/360_F_300476749_DuxJpoNrjGAQJVu3LwWuPOZcF58bAhmD.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Sign In</h2>
+    <form action="#" method="post" onsubmit="return checkCredentials()">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required autocomplete="off">
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Sign In">
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function checkCredentials() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Check if the username is incorrect (replace "Liam" with the desired username)
+      if (username !== "Liam") {
+        window.location.href = "https://www.myconfinedspace.com/wp-content/uploads/2009/05/get-the-fuck-off-my-computer-you-are-not-sneaky.jpg";
+        return false;
+      }
+      
+      if (password !== "PfMh9kpY!sqdKW9LmlTA^cPLw82Y30") {
+        window.location.href = "https://www.myconfinedspace.com/wp-content/uploads/2009/05/get-the-fuck-off-my-computer-you-are-not-sneaky.jpg";
+        return false;
+      }
+
+      // If the username is correct, you can proceed with the desired redirection
+      // Modify the URL and add any additional conditions as needed
+      if (username === "Liam" && password === "PfMh9kpY!sqdKW9LmlTA^cPLw82Y30") {
+        window.location.href = "/Users/liam/Desktop/HA.html";
+        return false;
+      }
+
+      // Default behavior if no redirection condition is met
+      return true;
+    }
+  </script>
+</body>
+</html>
+ 
